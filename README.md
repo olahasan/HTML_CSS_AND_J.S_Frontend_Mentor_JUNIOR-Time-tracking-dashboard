@@ -59,8 +59,7 @@ To get a local copy up and running, follow these simple steps:
 
 ## Usage
 
-- Click the theme switcher button to toggle between dark and light modes.
-- The theme preference is saved in local storage and will be remembered on subsequent visits.
+- Press the buttons (daily, weekly, monthly) to switch between data
 
 ## My process
 
