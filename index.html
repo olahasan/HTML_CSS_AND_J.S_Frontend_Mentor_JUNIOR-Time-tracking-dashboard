@@ -1,140 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- next meta, tells the browser to use the most modern version, standards-compliant rendering mode available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
-  <link rel="stylesheet" href="css/main.css"/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-  
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="css/main.css" />
 
-
-</head>
-<body>
-<div class="all">
-  <div class="container">
-    <div class="card first">
-      <div class="dark_one">
-        <div class="blue">
-          <div class="image">
-            <img src="images/image-jeremy.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="all">
+      <div class="container time-period">
+        <div class="card first">
+          <div class="dark_one">
+            <div class="blue">
+              <div class="image">
+                <img
+                  loading="lazy"
+                  src="images/image-jeremy.png"
+                  alt="A man called jeremy"
+                />
+              </div>
+              <small>Report for</small>
+              <h2>Jeremy Robson</h2>
+            </div>
+            <div class="btn">
+              <button id="Daily">Daily</button>
+              <button id="Weekly">Weekly</button>
+              <button id="Monthly">Monthly</button>
+            </div>
           </div>
-          <small>Report for</small>
-          <h2>Jeremy Robson</h2>
         </div>
-        <div class="btn">
-          <button id="Daily">Daily</button>
-        <button id="Weekly">Weekly</button>
-        <button id="Monthly">Monthly</button>
+
+        <div class="card">
+          <div class="green second orange">
+            <div class="image">
+              <img
+                loading="lazy"
+                src="images/icon-study.svg"
+                alt="study icon"
+              />
+            </div>
+            <div class="dark">
+              <div class="top">
+                <p>Work</p>
+                <img
+                  loading="lazy"
+                  src="images/icon-ellipsis.svg"
+                  alt="icon-ellipsis"
+                />
+              </div>
+              <span id="Workhour">32hrs</span>
+              <span id="PreviousWorkhour"> Previous - 36hrs </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="green second blue">
+            <div class="image">
+              <img
+                loading="lazy"
+                src="images/icon-study.svg"
+                alt="icon-study"
+              />
+            </div>
+            <div class="dark">
+              <div class="top">
+                <p>Play</p>
+                <img
+                  loading="lazy"
+                  src="images/icon-ellipsis.svg"
+                  alt="icon-ellipsis"
+                />
+              </div>
+              <span id="Playhour">10hrs</span>
+              <span id="PreviousPlayhour"> Previous - 8hrs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="green second red">
+            <div class="image">
+              <img loading="lazy" src="images/icon-play.svg" alt="icon-play" />
+            </div>
+            <div class="dark">
+              <div class="top">
+                <p>Study</p>
+                <img
+                  loading="lazy"
+                  src="images/icon-ellipsis.svg"
+                  alt="icon-ellipsis"
+                />
+              </div>
+              <span id="studyhour">4hrs</span>
+              <span id="Previousstudyhour"> Previous - 7hrs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="green second study">
+            <div class="image">
+              <img loading="lazy" src="images/icon-play.svg" alt="icon-play" />
+            </div>
+            <div class="dark">
+              <div class="top">
+                <p>Exercise</p>
+                <img
+                  loading="lazy"
+                  src="images/icon-ellipsis.svg"
+                  alt="icon-ellipsis"
+                />
+              </div>
+              <span id="exercisehour">4hrs</span>
+              <span id="Previousexercisehour"> Previous - 5hrs </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="green second purple">
+            <div class="image">
+              <img
+                loading="lazy"
+                src="images/icon-study.svg"
+                alt="icon-study"
+              />
+            </div>
+            <div class="dark">
+              <div class="top">
+                <p>Social</p>
+                <img
+                  loading="lazy"
+                  src="images/icon-ellipsis.svg"
+                  alt="icon-ellipsis"
+                />
+              </div>
+              <span id="socialhour">5hrs</span>
+              <span id="Previoussocialhour"> Previous - 10hrs </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="green second yellow">
+            <div class="image">
+              <img
+                loading="lazy"
+                src="images/icon-study.svg"
+                alt="icon-study"
+              />
+            </div>
+            <div class="dark">
+              <div class="top">
+                <p>Self Care</p>
+                <img
+                  loading="lazy"
+                  src="images/icon-ellipsis.svg"
+                  alt="icon-ellipsis"
+                />
+              </div>
+              <span id="carehour">2hrs</span>
+              <span id="Previouscarehour"> Previous - 2hrs </span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-   
-    <div class="card">
-      <div class="green second orange">
-        <div class="image">
-          <img src="images/icon-study.svg"/>
-        </div>
-        <div class="dark">
-          <div class="top">
-            <p>Work</p>
-            <img src="images/icon-ellipsis.svg"/>
-          </div>
-          <span id="Workhour">32hrs</span>
-          <span id="PreviousWorkhour"> Previous - 36hrs </span>
-          
-        </div>
-      </div>
-    </div>   
-    <div class="card">
-      <div class="green second blue">
-        <div class="image">
-          <img src="images/icon-study.svg"/>
-        </div>
-        <div class="dark">
-          <div class="top">
-            <p>Play</p>
-            <img src="images/icon-ellipsis.svg"/>
-          </div>
-          <span id="Playhour">10hrs</span>
-          <span id="PreviousPlayhour"> Previous - 8hrs</span>
-          
-        </div>
-      </div>
-    </div>   
-    <div class="card">
-      <div class="green second red">
-        <div class="image">
-          <img src="images/icon-play.svg"/>
-        </div>
-        <div class="dark">
-          <div class="top">
-            <p>Study</p>
-            <img src="images/icon-ellipsis.svg"/>
-          </div>
-          <span id="studyhour">4hrs</span>
-          <span id="Previousstudyhour"> Previous - 7hrs</span>
-          
-        </div>
-      </div>
-    </div>   
-    <div class="card">
-      <div class="green second study">
-        <div class="image">
-          <img src="images/icon-play.svg"/>
-        </div>
-        <div class="dark">
-          <div class="top">
-            <p>Exercise</p>
-            <img src="images/icon-ellipsis.svg"/>
-          </div>
-          <span id="Exercisehour">4hrs</span>
-          <span id="PreviousExercisehour"> Previous - 5hrs </span>
-          
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="green second purple">
-        <div class="image">
-          <img src="images/icon-study.svg"/>
-        </div>
-        <div class="dark">
-          <div class="top">
-            <p>Social</p>
-            <img src="images/icon-ellipsis.svg"/>
-          </div>
-          <span id="Socialhour">5hrs</span>
-          <span id="PreviousSocialhour"> Previous - 10hrs </span>
-          
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="green second yellow">
-        <div class="image">
-          <img src="images/icon-study.svg"/>
-        </div>
-        <div class="dark">
-          <div class="top">
-            <p>Self Care</p>
-            <img src="images/icon-ellipsis.svg"/>
-          </div>
-          <span id="Carehour">2hrs</span>
-          <span id="PreviousCarehour"> Previous - 2hrs </span>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-   
-<script src="main.js"></script>
-</body>
+
+    <script src="main.js"></script>
+  </body>
 </html>
